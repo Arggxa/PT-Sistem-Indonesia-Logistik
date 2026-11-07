@@ -1,0 +1,411 @@
+/* Penyesuaian PT SILOG di atas template Append */
+.hero .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.hero .hero-actions .btn-main{background:var(--accent-color);color:#fff;padding:12px 30px;border-radius:4px;font-weight:600;transition:.3s}
+.hero .hero-actions .btn-main:hover{background:color-mix(in srgb,var(--accent-color),#000 15%)}
+.hero .hero-actions .btn-outline{border:2px solid #fff;color:#fff;padding:10px 28px;border-radius:4px;font-weight:600;transition:.3s}
+.hero .hero-actions .btn-outline:hover{background:#fff;color:#222}
+.hero .hero-tag{display:inline-block;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#fff;opacity:.85;margin-bottom:12px}
+.partner-strip{padding:28px 0;text-align:center}
+.partner-strip p{margin:0;font-weight:600;letter-spacing:.5px}
+.partner-strip span{color:var(--accent-color)}
+
+/* ===== Layout gaya Reethau ===== */
+.eyebrow{display:inline-block;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-color);font-weight:600;margin-bottom:8px}
+.btn-main{display:inline-block;background:var(--accent-color);color:#fff;padding:12px 30px;border-radius:4px;font-weight:600;transition:.3s}
+.btn-main:hover{background:color-mix(in srgb,var(--accent-color),#000 15%);color:#fff}
+.lang-switch{display:flex;gap:4px;margin-left:16px}
+.lang-btn{background:transparent;border:1px solid color-mix(in srgb,var(--nav-color),transparent 60%);color:var(--nav-color);font-size:12px;font-weight:600;padding:4px 10px;border-radius:3px;cursor:pointer}
+.lang-btn.active{background:var(--accent-color);border-color:var(--accent-color);color:#fff}
+.about-silog{padding:80px 0}
+.svc-img{border-radius:8px;width:100%;object-fit:cover}
+.svc-tabbar{position:sticky;top:70px;z-index:50;background:var(--surface-color);padding:12px 0;border-bottom:1px solid #eee;margin-bottom:40px}
+.svc-tab,.svc-pick,.svc-sub{border:1px solid var(--accent-color);background:transparent;color:var(--accent-color);padding:8px 22px;border-radius:30px;font-weight:600;font-size:14px;cursor:pointer;transition:.3s;display:inline-block}
+.svc-tab.active,.svc-tab:hover,.svc-pick:hover,.svc-sub:hover{background:var(--accent-color);color:#fff}
+.svc-panel{display:none}
+.svc-panel.active{display:block}
+.svc-intro{padding-bottom:30px}
+.svc-subnav{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.svc-block{padding:50px 0;border-top:1px solid #eee}
+.svc-sub-title{font-size:28px;font-weight:700}
+.svc-sub-title b{color:var(--accent-color)}
+.svc-sub-desc{max-width:720px;margin-bottom:30px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.step{background:var(--surface-color);box-shadow:0 0 20px rgba(0,0,0,.07);border-radius:8px;padding:24px;text-align:center}
+.step-icon{font-size:36px;color:var(--accent-color);line-height:1;margin-bottom:10px}
+.step h4{font-size:16px;font-weight:700;margin-bottom:6px}
+.step p{font-size:14px;margin:0}
+.svc-bottom{padding:60px 0 20px}
+.footer h4{font-size:16px;font-weight:700;margin-bottom:12px}
+.cert-slot{border:1px dashed #bbb;border-radius:6px;padding:14px;font-size:13px;color:#888;text-align:center}
+@media(max-width:1199px){.svc-tabbar{top:60px}}
+/* Header ringkas */
+.lang-btn{border-color:transparent}
+.lang-btn.active{border-radius:20px;padding:4px 14px}
+.index-page.scrolled .header{--background-color:rgba(255,255,255,.82);backdrop-filter:blur(8px)}
+@media (max-width:1199px){
+  .mobile-nav-toggle{display:none!important}
+  .navmenu{order:2;flex:1}
+  .lang-switch{order:3;margin-left:0}
+  .navmenu ul{display:flex!important;position:static;background:none;border:0;box-shadow:none;padding:0;margin:0;justify-content:center}
+  .navmenu a{color:var(--nav-color);padding:8px 10px;font-size:14px}
+  .navmenu a.active{color:var(--nav-hover-color)}
+  .svc-tabbar{top:76px}
+}
+@media (max-width:767px){
+  .header .container-fluid{flex-wrap:wrap}
+  .lang-switch{order:2;margin-left:auto}
+  .navmenu{order:3;flex:0 0 100%}
+  .navmenu a{padding:8px 7px;font-size:13px}
+  .svc-tabbar{top:96px}
+}
+/* ===== Karir (gaya Reethau) ===== */
+.karir{position:relative;overflow:hidden;min-height:560px;padding:110px 0 0;background:#1d2630}
+.karir-text{position:relative;z-index:2;max-width:1140px}
+.karir-title{font-size:44px;font-weight:300;line-height:1.2;margin-bottom:24px;color:#fff}
+.karir-title span{color:color-mix(in srgb,var(--accent-color),#fff 30%)}
+.karir-title b{font-weight:400}
+.karir-text p{max-width:380px;font-size:15px;margin-bottom:28px}
+.karir-mail{display:flex;align-items:center;flex-wrap:wrap;gap:8px 20px;font-size:15px}
+.karir-pill{display:inline-block;background:color-mix(in srgb,var(--accent-color),#fff 25%);color:#1d2630;padding:6px 20px;border-radius:30px;font-size:15px;overflow-wrap:anywhere;transition:.3s}
+.karir-pill:hover{background:#fff;color:#1d2630}
+.karir-img{position:absolute;right:0;bottom:0;width:62%;height:50%;background-size:cover;background-position:center;clip-path:polygon(16% 0,100% 0,100% 100%,0 100%)}
+.karir-tri{position:absolute;right:0;bottom:50%;width:90px;height:50px;background:var(--accent-color);clip-path:polygon(100% 0,100% 100%,0 100%)}
+@media(max-width:991px){
+  .karir{padding:90px 0 0;min-height:0}
+  .karir-title{font-size:34px}
+  .karir-img{position:relative;width:100%;height:260px;margin-top:40px;clip-path:polygon(10% 0,100% 0,100% 100%,0 100%)}
+  .karir-tri{display:none}
+}
+/* ===== Kontak + peta ===== */
+.kontak{padding:80px 0}
+.kontak-title{position:relative;padding-left:22px;font-size:40px;font-weight:400;line-height:1.2;margin-bottom:60px}
+.kontak-title::before{content:"";position:absolute;left:0;top:16px;width:10px;height:12px;background:var(--accent-color);clip-path:polygon(0 0,100% 50%,0 100%)}
+.kontak-info{font-size:14px;line-height:1.7;font-style:normal;margin:0}
+.kontak-label{display:block;font-weight:700}
+.kontak-alamat{margin:0 0 24px}
+.kontak-list{list-style:none;margin:0;padding:0}
+.kontak-info i{color:var(--accent-color);margin-right:4px}
+.kontak-map{position:relative;width:100%;max-width:556px;aspect-ratio:556/313;border-radius:4px;overflow:hidden;box-shadow:0 0 20px rgba(0,0,0,.1)}
+.kontak-map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.kontak-open{display:inline-block;margin-top:10px;font-size:14px;font-weight:600}
+.kontak-open i{margin-right:4px}
+.kontak-copy{font-size:12px;margin:14px 0 0}
+.footer-dark{--default-color:#fff;--heading-color:#fff;--background-color:#0d1419;--contrast-color:#fff;background:#0d1419;color:#fff}
+.footer-dark a{color:#fff}
+.footer-dark a:hover{color:var(--accent-color)}
+.footer-dark .sitename{color:#fff}
+.footer-dark .cert-slot{border-color:#556;color:#99a}
+@media (max-width:640px){
+  .kontak-map{height:320px}
+}
+/* ===== Mode per halaman (seperti Reethau) ===== */
+.page{display:none}
+.page.active{display:block}
+.about-silog,.layanan,.kontak{padding-top:130px;min-height:calc(100vh - 120px)}
+/* Header menyesuaikan halaman */
+.index-page.header-solid .header{
+  --background-color:rgba(255,255,255,.82);
+  --heading-color:#32353a;
+  --nav-color:#3a3939;
+  --nav-hover-color:#d71920;
+  box-shadow:0 0 30px 10px rgba(0,0,0,.1);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+}
+/* tombol bahasa di header putih */
+.index-page.header-solid .lang-btn{color:#3a3939}
+.index-page.header-solid .lang-btn.active{color:#fff}
+/* ===== BERANDA (gaya Reethau) ===== */
+
+/* Hero: ajakan gulir ("Gulir untuk Jelajahi") */
+.hero .hero-scroll{position:absolute;left:50%;bottom:36px;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:8px;color:#fff;font-size:13px;font-weight:600;letter-spacing:.5px;opacity:.9;text-shadow:0 1px 8px rgba(0,0,0,.6);transition:.3s}
+.hero .hero-scroll:hover{color:#fff;opacity:1}
+.hero .hero-scroll i{font-size:30px;line-height:1;animation:hero-bob 1.8s ease-in-out infinite}
+@keyframes hero-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+.hero .container{padding-bottom:60px}
+
+/* Bagian 2: pengantar */
+.home-intro{padding:100px 0;background:var(--surface-color)}
+.hi-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px 64px;align-items:center}
+.hi-text{margin:0;font-family:var(--heading-font);font-size:clamp(20px,2.1vw,28px);font-weight:400;line-height:1.5;color:var(--heading-color)}
+.hi-img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+.hi-title{font-size:clamp(28px,3.4vw,44px);font-weight:400;line-height:1.2;margin:0 0 28px}
+.hi-title b{font-weight:700}
+.hi-btn,.hl-more{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:15px}
+.hi-btn::after,.hl-more::after{content:"\f134";font-family:"bootstrap-icons";font-size:22px;line-height:1;transition:transform .3s}
+.hi-btn:hover::after,.hl-more:hover::after{transform:translateX(4px)}
+
+/* ===== Bagian 2 gaya Reethau: gambar kiri - teks tengah - gambar kanan ===== */
+.hi-title{position:relative;padding-left:24px}
+.hi-title::before{content:"";position:absolute;left:0;top:.45em;width:11px;height:13px;background:var(--accent-color);clip-path:polygon(0 0,100% 50%,0 100%)}
+
+/* tablet & desktop (>= 768px): 3 kolom */
+@media (min-width:768px){
+  .home-intro{padding:100px 0 80px}
+  .hi-grid{
+    grid-template-columns:1fr 1.1fr 1fr;
+    grid-template-areas:"left text right" "copy copy copy";
+    gap:70px 40px;align-items:center
+  }
+  .hi-grid .hi-text{
+    grid-area:text;text-align:center;
+    font-family:var(--default-font);
+    font-size:clamp(13px,1.3vw,18px);line-height:1.75;color:var(--default-color)
+  }
+  .hi-grid .hi-img-b{grid-area:left;align-self:end;aspect-ratio:3/2;margin-top:80px;border-radius:0}
+  .hi-grid .hi-img-a{grid-area:right;align-self:start;aspect-ratio:4/3;border-radius:0}
+  .hi-grid .hi-copy{grid-area:copy;display:grid;grid-template-columns:1fr auto;column-gap:40px;align-items:end}
+  .hi-copy .eyebrow{grid-column:1;grid-row:1;padding-left:24px;margin-bottom:10px}
+  .hi-copy .hi-title{
+    grid-column:1;grid-row:2;margin:0;
+    font-family:Arial,var(--heading-font),sans-serif;
+    font-size:clamp(28px,3.6vw,52px);line-height:1.2;color:#1f2328
+  }
+  .hi-copy .hi-btn{
+    grid-column:2;grid-row:1 / span 2;align-self:end;
+    border:1px solid #ddd;padding:8px 16px;font-size:13px;gap:8px;background:#fff;transition:.3s
+  }
+  .hi-copy .hi-btn:hover{border-color:var(--accent-color);background:var(--accent-color);color:#fff}
+}
+
+/* HP (< 768px) */
+@media (max-width:767px){
+  .home-intro{padding:60px 0}
+  .hi-grid{grid-template-columns:1fr 1fr;gap:20px}
+  .hi-grid .hi-text{grid-column:1 / -1;text-align:center;font-size:16px;line-height:1.7}
+  .hi-grid .hi-img{aspect-ratio:4/5;border-radius:4px}
+  .hi-grid .hi-copy{grid-column:1 / -1;margin-top:16px}
+  .hi-copy .hi-title{font-size:clamp(26px,7vw,34px);margin-bottom:18px}
+}
+
+/* Bagian 3: ringkasan layanan (menu kiri bisa diklik) */
+.home-layanan{padding:60px 0;background:#fff}
+.hl-wrap{display:grid;grid-template-columns:1fr;gap:28px}
+.hl-nav{position:relative;display:flex;flex-wrap:wrap;gap:8px}
+.hl-nav-indicator{display:none}
+.hl-nav-item{border:1px solid var(--accent-color);background:transparent;color:var(--accent-color);padding:8px 22px;border-radius:30px;font-weight:600;font-size:14px;cursor:pointer;transition:.3s}
+.hl-nav-item.active{background:var(--accent-color);color:#fff}
+.hl-slides{display:grid}
+.hl-slide{grid-area:1/1;display:grid;grid-template-columns:1fr;gap:24px;align-items:center;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(14px);transition:opacity .45s ease,transform .45s ease,visibility .45s}
+.hl-slide.active{opacity:1;visibility:visible;pointer-events:auto;transform:none}
+.hl-label{display:inline-block;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-color);font-weight:600;margin-bottom:8px}
+.hl-title{font-size:clamp(26px,2.8vw,38px);font-weight:400;line-height:1.25;margin:0 0 16px}
+.hl-body p{max-width:460px;margin:0 0 24px}
+.hl-img img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+@media (min-width:992px){
+  .home-layanan{padding:110px 0}
+  .hl-wrap{grid-template-columns:200px 1fr;gap:48px;align-items:center}
+  .hl-slide{grid-template-columns:1fr 1fr;gap:48px}
+  .hl-img img{max-height:52vh}
+  .hl-nav{flex-direction:column;flex-wrap:nowrap;gap:0;border-left:2px solid color-mix(in srgb,var(--default-color),transparent 85%)}
+  .hl-nav-indicator{display:block;position:absolute;left:-2px;top:0;width:2px;height:0;background:var(--accent-color);transition:top .4s cubic-bezier(.65,0,.35,1),height .4s cubic-bezier(.65,0,.35,1)}
+  .hl-nav-item{border:0;border-radius:0;background:transparent;text-align:left;padding:12px 0 12px 20px;font-size:16px;color:color-mix(in srgb,var(--default-color),transparent 45%)}
+  .hl-nav-item:hover{color:var(--accent-color)}
+  .hl-nav-item.active{background:transparent;color:var(--accent-color)}
+  .hl-nav-item:focus-visible{outline:2px solid var(--accent-color);outline-offset:2px}
+}
+
+/* ===== Tentang Kami: video banner penuh (tanpa suara, tanpa tombol) ===== */
+.about-silog.page{padding-top:0}
+.about-video{position:relative;width:100%;margin-top:76px;margin-bottom:70px;background:#000;overflow:hidden}
+.about-video video{display:block;width:100%;height:auto;max-height:82vh;object-fit:cover;pointer-events:none}
+@media (max-width:767px){
+  .about-video{margin-top:104px;margin-bottom:50px}
+  .about-video video{height:260px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .hero .hero-scroll i{animation:none}
+  .hl-slide,.hi-btn::after,.hl-more::after,.hl-nav-indicator{transition:none}
+}
+/* ===== Ikon sosial media di footer ===== */
+.social-links{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;margin-top:18px}
+.social-links a{
+  position:relative;display:inline-flex;color:#fff;font-size:22px;line-height:1;
+  transition:color .3s,transform .3s
+}
+.social-links a:hover{color:var(--accent-color);transform:translateY(-2px)}
+
+/* tooltip nama sosmed */
+.social-links a::after{
+  content:attr(data-tip);position:absolute;left:50%;bottom:calc(100% + 12px);
+  transform:translate(-50%,4px);white-space:nowrap;
+  background:#3a2a2a;color:#e8dede;font-size:13px;font-weight:500;
+  padding:6px 12px;border-radius:4px;opacity:0;pointer-events:none;
+  transition:opacity .25s,transform .25s
+}
+.social-links a::before{
+  content:"";position:absolute;left:50%;bottom:calc(100% + 6px);
+  transform:translate(-50%,4px);border:6px solid transparent;border-top-color:#3a2a2a;border-bottom:0;
+  opacity:0;pointer-events:none;transition:opacity .25s,transform .25s
+}
+.social-links a:hover::after,.social-links a:hover::before,
+.social-links a:focus-visible::after,.social-links a:focus-visible::before{opacity:1;transform:translate(-50%,0)}
+/* ===== Tentang Kami: sertifikat ===== */
+.sertifikat{padding:130px 0 0}
+@media (max-width:767px){.sertifikat{padding-top:80px}}
+.cert-head{text-align:center;margin-bottom:48px}
+.cert-head h2{font-size:clamp(26px,3vw,38px);font-weight:400;margin:0}
+
+.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;align-items:stretch}
+.cert-card{
+  display:flex;flex-direction:column;background:#fff;border-radius:10px;overflow:hidden;
+  color:inherit;box-shadow:0 0 20px rgba(0,0,0,.08);
+  transition:transform .3s,box-shadow .3s
+}
+.cert-card:hover{transform:translateY(-6px);box-shadow:0 14px 32px rgba(0,0,0,.14);color:inherit}
+
+.cert-thumb{
+  display:flex;align-items:center;justify-content:center;
+  aspect-ratio:4/4.6;padding:20px;background:#f1f3f5
+}
+.cert-thumb img{
+  max-width:100%;max-height:100%;object-fit:contain;
+  box-shadow:0 4px 16px rgba(0,0,0,.18);transition:transform .4s
+}
+.cert-card:hover .cert-thumb img{transform:scale(1.03)}
+
+.cert-body{display:flex;flex-direction:column;flex:1;gap:8px;padding:22px 24px 24px}
+.cert-std{font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:600;color:var(--accent-color)}
+.cert-body h3{font-size:19px;font-weight:600;line-height:1.35;margin:0}
+
+@media (max-width:991px){.cert-grid{gap:20px}.cert-body{padding:18px 18px 22px}.cert-body h3{font-size:17px}}
+@media (max-width:767px){
+  .cert-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}
+}
+/* ===== Footer: daftar sertifikat ===== */
+.footer-cert-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:14px}
+.footer-cert-list a{display:inline-flex;align-items:center;gap:8px}
+.footer-cert-list a::before{content:"›";color:var(--accent-color);font-weight:700;font-size:18px;line-height:1}
+.footer-cert-all{font-weight:600;margin-top:4px}
+.footer h4 a{color:inherit}
+.footer h4 a:hover{color:var(--accent-color)}
+
+/* cegah lompatan layout: video memesan tinggi sebelum selesai dimuat */
+.about-video video{aspect-ratio:1920/858}
+@media (max-width:767px){.about-video video{aspect-ratio:auto}}
+/* ===== Tentang Kami: portofolio proyek ===== */
+.portofolio{margin-top:80px;padding:90px 0;background:var(--surface-color)}
+.porto-head{text-align:center;max-width:640px;margin:0 auto 48px}
+.porto-head h2{font-size:clamp(26px,3vw,38px);font-weight:400;margin:0 0 12px}
+.porto-head p{margin:0}
+.porto-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.porto-item{min-width:0}
+
+.porto-card{position:relative;display:block;width:100%;aspect-ratio:4/3;padding:0;border:0;border-radius:10px;overflow:hidden;background:#0d1419;color:#fff;text-align:left;cursor:pointer;box-shadow:0 0 20px rgba(0,0,0,.08);transition:transform .35s,box-shadow .35s}
+.porto-card:hover{transform:translateY(-6px);box-shadow:0 14px 32px rgba(0,0,0,.18)}
+.porto-card:focus-visible{outline:3px solid var(--accent-color);outline-offset:3px}
+.porto-img,.porto-img img,.porto-shade{position:absolute;inset:0;width:100%;height:100%}
+.porto-img img{object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.porto-card:hover .porto-img img,.porto-card:focus-visible .porto-img img{transform:scale(1.07)}
+.porto-shade{background:linear-gradient(180deg,rgba(13,20,25,.3) 0,rgba(13,20,25,0) 35%,rgba(13,20,25,.9) 100%)}
+.porto-card::after{content:"";position:absolute;left:0;bottom:0;height:4px;width:0;background:var(--accent-color);transition:width .45s}
+.porto-card:hover::after,.porto-card:focus-visible::after{width:100%}
+.porto-tag{position:absolute;top:16px;left:16px;max-width:calc(100% - 80px);padding:5px 12px;border-radius:30px;background:var(--accent-color);color:#fff;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;line-height:1.3}
+.porto-open{position:absolute;top:14px;right:14px;display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#fff;color:var(--accent-color);font-size:18px;opacity:0;transform:scale(.6) rotate(-45deg);transition:opacity .3s,transform .4s}
+.porto-card:hover .porto-open,.porto-card:focus-visible .porto-open{opacity:1;transform:none}
+.porto-body{position:absolute;left:0;right:0;bottom:0;padding:20px 22px 24px}
+.porto-title{display:block;font-size:19px;font-weight:600;line-height:1.3}
+.porto-meta{display:flex;align-items:center;gap:6px;margin-top:8px;font-size:13px;opacity:.9}
+
+/* kartu ajakan di akhir grid */
+.porto-cta{position:relative;display:flex;flex-direction:column;justify-content:space-between;aspect-ratio:4/3;padding:28px;border-radius:10px;overflow:hidden;background:var(--accent-color);color:#fff;transition:transform .35s,box-shadow .35s}
+.porto-cta::before{content:"";position:absolute;right:-70px;top:-70px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.1)}
+.porto-cta:hover{color:#fff;transform:translateY(-6px);box-shadow:0 14px 32px rgba(0,0,0,.18)}
+.porto-cta h3{position:relative;margin:0;font-size:clamp(22px,2vw,28px);font-weight:600;line-height:1.25;color:#fff}
+.porto-cta p{position:relative;margin:8px 0 0;opacity:.92}
+.porto-cta-btn{position:relative;align-self:flex-start;display:inline-flex;align-items:center;gap:10px;padding:10px 20px;border-radius:30px;background:#fff;color:var(--accent-color);font-size:14px;font-weight:600}
+.porto-cta-btn i{font-size:20px;line-height:1;transition:transform .3s}
+.porto-cta:hover .porto-cta-btn i{transform:translateX(4px)}
+
+/* jendela detail */
+.porto-modal .modal-content{position:relative;border:0;border-radius:12px;overflow:hidden}
+.porto-modal .btn-close{position:absolute;top:14px;right:14px;z-index:5;padding:10px;border-radius:50%;background-color:#fff;opacity:1;box-shadow:0 2px 10px rgba(0,0,0,.2)}
+.porto-modal-body{display:grid;grid-template-columns:1.2fr 1fr}
+.pd-gallery{display:flex;flex-direction:column;justify-content:center;background:#0d1419}
+.pd-main{aspect-ratio:4/3;overflow:hidden}
+.pd-main img{display:block;width:100%;height:100%;object-fit:cover}
+.pd-thumbs{display:flex;gap:8px;padding:10px}
+.pd-thumb{width:76px;aspect-ratio:4/3;padding:0;border:2px solid transparent;border-radius:6px;overflow:hidden;background:none;opacity:.6;cursor:pointer;transition:opacity .3s,border-color .3s}
+.pd-thumb.active,.pd-thumb:hover{opacity:1;border-color:var(--accent-color)}
+.pd-thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.pd-info{padding:40px 32px 32px}
+.pd-title{margin:0 0 14px;font-size:clamp(22px,2.4vw,30px);font-weight:400;line-height:1.25}
+.pd-desc{margin:0 0 22px}
+.pd-meta{display:grid;gap:14px;margin:0 0 28px}
+.pd-meta dt{margin:0 0 2px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+.pd-meta dd{margin:0;font-size:14px}
+.pd-meta ul{margin:0;padding-left:18px}
+
+@media (hover:none){.porto-open{opacity:1;transform:none}}
+@media (max-width:991px){.porto-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:767px){
+  .porto-modal-body{grid-template-columns:1fr}
+  .pd-info{padding:26px 22px 28px}
+}
+@media (max-width:575px){
+  .portofolio{margin-top:60px;padding:70px 0}
+  .porto-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  .porto-card,.porto-cta,.porto-img img,.porto-open,.porto-card::after{transition:none}
+}
+.step-icon{line-height:0;margin-bottom:14px}
+.step-icon img{width:104px;height:104px;border-radius:15.6%;display:block;margin:0 auto}
+.header .logo img{height:34px;width:auto;max-height:none;margin-right:0;display:block}
+.header .logo .logo-on-light{display:none}
+.index-page.scrolled .header .logo-on-dark,
+.index-page.header-solid .header .logo-on-dark{display:none}
+.index-page.scrolled .header .logo-on-light,
+.index-page.header-solid .header .logo-on-light{display:block}
+@media (max-width:767px){.header .logo img{height:28px}}
+/* ===== Tentang Kami: tulisan dan foto lebih dekat ===== */
+.about-photo{
+  display:block;width:100%;max-width:340px;margin:0 auto;
+  aspect-ratio:1/1;object-fit:cover;object-position:center 20%
+}
+@media (min-width:992px){
+  .about-row{justify-content:center}
+  .about-row > .col-lg-6:first-child{flex:0 1 540px;width:auto}
+  .about-row > .col-lg-6:last-child{flex:0 0 auto;width:auto}
+  .about-photo{width:340px;margin:0}
+}
+/* ===== Pop up portofolio: ukuran seragam untuk semua proyek ===== */
+@media (min-width:992px){
+  .porto-modal-body{height:min(660px,88vh)}
+  .pd-info{display:flex;flex-direction:column;justify-content:center;overflow-y:auto}
+  .pd-info .btn-main{align-self:flex-start}
+}
+/* ===== Proses Kerja: alur tanpa geser ===== */
+.steps{
+  display:flex;flex-wrap:nowrap;gap:24px;align-items:stretch;
+  overflow:visible;padding:0;scroll-snap-type:none
+}
+.step{position:relative;flex:1 1 0;min-width:0;padding:22px 12px;scroll-snap-align:none}
+.step-icon img{width:104px;max-width:100%;height:auto;aspect-ratio:1/1}
+
+.step:not(:last-child)::after{
+  content:"\f285";font-family:"bootstrap-icons";
+  position:absolute;right:-24px;top:62px;width:24px;
+  text-align:center;font-size:22px;line-height:1;color:var(--accent-color)
+}
+
+@media (min-width:768px) and (max-width:991px){
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 24px}
+  .step:not(:last-child)::after{display:none}
+}
+
+@media (max-width:767px){
+  .steps{flex-direction:column;gap:36px}
+  .step{flex:none;padding:22px 16px}
+  .step:not(:last-child)::after{
+    content:"\f282";right:auto;left:50%;top:auto;bottom:-31px;transform:translateX(-50%)
+  }
+}
+/* Sembunyikan pemilih layanan di bawah halaman Layanan (tinggi tetap, footer tidak naik) */
+.svc-bottom{pointer-events:none}
+.svc-bottom > *{visibility:hidden}
+/* ===== Footer: kolom brand ===== */
+.footer-brand{display:inline-flex;flex-direction:column;align-items:flex-start;gap:10px}
+.footer-logo{height:38px;width:auto;display:block}
+.footer-brand .sitename{font-size:15px;font-weight:600}
+.footer-tagline{max-width:340px;margin:14px 0 0;font-size:14px;line-height:1.7;opacity:.8}
